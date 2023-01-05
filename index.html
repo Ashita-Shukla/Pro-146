@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: white">
+
+        <!--Camera-->
+        <a-entity position="0 -5 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Head-->
+         
+
+        
+        <a-cylinder
+        animation="property: position; from:-0.63 7.1 -4.9 ;to: -0.63 7.1 -4.5;dir:alternate; loop: true; dur: 1000"
+            position="-0.63 7.1 -4.9" radius="2.5" color="#000" height="6"></a-cylinder>
+
+        <a-cylinder position="-0.63 5.1 -4.9" radius="0.5" color="#000" height="6"
+        animation="property: position; from:-0.63 5.1 -4.9 ;to: -0.63 5.1 -4.5;dir:alternate; loop: true; dur: 1000"></a-cylinder>
+
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: position; from:-0.63 4.1 -4.9 ;to: -0.63 4.1 -4.5;dir:alternate; loop: true; dur: 1000"">
+            <a-sphere position="-0.33 -6.6 -4.9" radius="5.8" color="black"></a-sphere>  
+        </a-entity>
+
+        <a-cube 
+        ></a-cube>
+    </a-scene>
+</body>
+
+</html>
